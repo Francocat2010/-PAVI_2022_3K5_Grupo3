@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\juanc\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\ProyectoTPI_3k5.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\UTN\\3er AÑO\\PAV I\\TPI PAV 3k5\\PAVI_2022_3K5_Grupo3\\Src\\ProyectoTPI_3k5.csproj",
       "projectName": "ProyectoTPI_3k5",
-      "projectPath": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\ProyectoTPI_3k5.csproj",
-      "packagesPath": "C:\\Users\\juanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\UTN\\3er AÑO\\PAV I\\TPI PAV 3k5\\PAVI_2022_3K5_Grupo3\\Src\\ProyectoTPI_3k5.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\UTN\\3er AÑO\\PAV I\\TPI PAV 3k5\\PAVI_2022_3K5_Grupo3\\Src\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\juanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,8 +51,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -64,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

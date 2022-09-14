@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\ProyectoTPI_3k5.csproj",
+      "projectUniqueName": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\PAVI_2022_3K5_Grupo3\\ProyectoTPI_3k5.csproj",
       "projectName": "ProyectoTPI_3k5",
-      "projectPath": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\ProyectoTPI_3k5.csproj",
+      "projectPath": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\PAVI_2022_3K5_Grupo3\\ProyectoTPI_3k5.csproj",
       "packagesPath": "C:\\Users\\juanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\obj\\",
+      "outputPath": "C:\\Users\\juanc\\PAV1\\ProyectoTPI_3k5\\PAVI_2022_3K5_Grupo3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\juanc\\AppData\\Roaming\\NuGet\\NuGet.Config",

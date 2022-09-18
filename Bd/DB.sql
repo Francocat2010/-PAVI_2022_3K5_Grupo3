@@ -1,12 +1,13 @@
-CREATE DATABASE [ProyectoPPI]
-USE [ProyectoPPI]
+CREATE DATABASE [ProyectoTPI]
+
+USE [ProyectoTPI]
 CREATE TABLE Barrios (
 	cod_barrio [int] NOT NULL,
 	nombre_barrio [varchar] (50) NULL,
 	cod_ciudad [int],
 	CONSTRAINT cod_barrio_pk PRIMARY KEY (cod_barrio)
 )
-USE [ProyectoPPI]
+
 SET IDENTITY_INSERT [Usuarios] ON 
 GO
 SET QUOTED_IDENTIFIER ON
@@ -35,7 +36,7 @@ CREATE TABLE Llamadas(
 	cod_banda_horaria [int],
 	CONSTRAINT llamada_fk PRIMARY KEY(cod_nacional_emisor,cod_area_emisor,nro_telefono_emisor,fecha_hora_inicio)
 )
-USE [ProyectoPPI]
+
 SET IDENTITY_INSERT [Usuarios] ON 
 GO
 CREATE TABLE [Usuarios](

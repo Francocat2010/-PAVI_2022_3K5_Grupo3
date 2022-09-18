@@ -44,9 +44,8 @@ namespace ProyectoTPI_3k5
                     string query = string.Concat(" SELECT * ",
                                                 "   FROM Usuarios ",
                                                 "  WHERE usuario= '", pUsuario, "'");
-                    List<Usuario> lst = new List<Usuario>();
 
-                    DataTable resultado = new Managmentdb().ConsultaSQL(query, lst);
+                    DataTable resultado = new Managmentdb().ConsultaSQL(query);
 
                     if (resultado.Rows.Count >= 1)
                     {
@@ -62,5 +61,10 @@ namespace ProyectoTPI_3k5
                 }
                 return uservalido;
             }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

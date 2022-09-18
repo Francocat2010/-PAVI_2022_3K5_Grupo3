@@ -1,4 +1,5 @@
 ﻿using ProyectoTPI_3k5.datos;
+using ProyectoTPI_3k5.formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,19 +17,18 @@ namespace ProyectoTPI_3k5
         public MenuPrincipalForm(string usuario)
         {
             InitializeComponent();
-            lblBienvenida.Text = "Bienvenido " + usuario;
-            lblBienvenida.Visible = true;
+            
         }
 
-        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AltaPersona ventana = new AltaPersona();
-            ventana.Show();
+            MessageBox.Show("App Compania telefonica V-1.0", "Grupo03_PAV1", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void MenuPrincipalForm_Load(object sender, EventArgs e)
+        private void consultaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            new ConsultaCliente().ShowDialog();
+            
         }
     }
 }

@@ -61,7 +61,7 @@ namespace ProyectoTPI_3k5.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=(localdb)\patricio;Initial Catalog=ProyectoPPI;Integrated Security=true;.
+        ///   Busca una cadena traducida similar a Data Source=(local)\SQLEXPRESS;Initial Catalog=ProyectoTPI;Integrated Security=true;.
         /// </summary>
         internal static string cnnCadena {
             get {

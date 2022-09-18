@@ -12,7 +12,7 @@ namespace ProyectoTPI_3k5.datos
             cnn = new SqlConnection(Properties.Resources.cnnCadena);
         }
 
-        public DataTable ConsultaSQL(string strSql, List<Usuario> lst)
+        public DataTable ConsultaSQL(string strSql, Dictionary<string, object> prs = null)
         {
             SqlCommand cmd = new SqlCommand();
             DataTable tabla = new DataTable();
@@ -22,12 +22,14 @@ namespace ProyectoTPI_3k5.datos
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = strSql;
 
-            //if (lst != null && lst.Count > 0)
-            foreach (Usuario p in lst)
+            
+            if (prs != null)
             {
-                cmd.Parameters.AddWithValue(p.NombreUsu, p.Pass);
+                foreach (var item in prs)
+                {
+                    cmd.Parameters.AddWithValue(item.Key, item.Value);
+                }
             }
-
             tabla.Load(cmd.ExecuteReader());
             cnn.Close();
 

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoTPI_3k5.Entidades
+namespace ProyectoTPI_3k5.datos
 {
     public class Usuario
     {
-        private string NombreUsu;
-        private string Pass;
+        public string NombreUsu { get; set; }
+        public string Pass { get; set; }
 
         public Usuario(string NombreUsu, string password)
         {
@@ -17,20 +17,8 @@ namespace ProyectoTPI_3k5.Entidades
             this.NombreUsu = NombreUsu;
 
             Pass = password;
-            
+
         }
 
-        //Propiedades que sean capaces de obtener o setear valores
-        public string NombreDeUsuario
-        {
-            get => NombreUsu;
-            set => NombreUsu = value;
-        }
-
-        public string Password
-        {
-            get => Pass;
-            set => Pass = value;
-        }
     }
 }

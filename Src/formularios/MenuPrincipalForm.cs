@@ -1,4 +1,4 @@
-﻿using ProyectoTPI_3k5.Entidades;
+﻿using ProyectoTPI_3k5.datos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +13,10 @@ namespace ProyectoTPI_3k5
 {
     public partial class MenuPrincipalForm : Form
     {
-        public MenuPrincipalForm(Usuario usu)
+        public MenuPrincipalForm(string usuario)
         {
             InitializeComponent();
-            lblBienvenida.Text = "Bienvenido " + usu.NombreDeUsuario;
+            lblBienvenida.Text = "Bienvenido " + usuario;
             lblBienvenida.Visible = true;
         }
 

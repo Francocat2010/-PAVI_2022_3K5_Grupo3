@@ -36,3 +36,11 @@ C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.pdb
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.genruntimeconfig.cache
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ref\ProyectoTPI_3k5.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.Properties.Resources.resources
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.csproj.CopyComplete

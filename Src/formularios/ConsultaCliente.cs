@@ -30,18 +30,18 @@ namespace ProyectoTPI_3k5.formularios
 
             if (!string.IsNullOrEmpty(txtNombre.Text))
             {
-                strSql += "AND (txtNombre=@nombre_cliente) ";
+                strSql += "AND (nombre_cliente=@cliente) ";
                 parametros.Add("cliente", txtNombre.Text);
             }
 
-            /*if (chkActivos.Checked)
+            if (chkActivos.Checked)
             {
-                strSql += " AND activo = '1'";
+                strSql += " AND activo_cliente = '1'";
             }
             else
             {
-                strSql += " AND activo = '0'";
-            }*/
+                strSql += " AND activo_cliente = '0'";
+            }
             dgvClientes.DataSource = new Managmentdb().ConsultaSQL(strSql, parametros);
             if(dgvClientes.Rows.Count == 0)
             {

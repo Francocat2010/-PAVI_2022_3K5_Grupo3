@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace ProyectoTPI_3k5
 {
-    public partial class AltaPersona : Form
+    public partial class frmAltaCliente : Form
     {
-        public AltaPersona()
+        public frmAltaCliente()
         {
             InitializeComponent();
         }
+
+
     }
 }

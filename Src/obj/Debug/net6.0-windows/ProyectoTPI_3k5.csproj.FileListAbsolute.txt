@@ -23,7 +23,6 @@ C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\ProyectoTPI_3k5.dll
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\bin\Debug\net6.0-windows\ProyectoTPI_3k5.pdb
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.csproj.AssemblyReference.cache
-C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.AltaPersona.resources
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.LoginForm.resources
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.MenuPrincipalForm.resources
 C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.csproj.GenerateResource.cache
@@ -72,3 +71,5 @@ C:\Users\juanc\PAV1\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\refint\Pro
 C:\Users\juanc\PAV1\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.pdb
 C:\Users\juanc\PAV1\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.genruntimeconfig.cache
 C:\Users\juanc\PAV1\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ref\ProyectoTPI_3k5.dll
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.formularios.ConsultaCliente.resources
+C:\Users\patricio\Desktop\materias\pav1\pavtp\PAVI_2022_3K5_Grupo3\Src\obj\Debug\net6.0-windows\ProyectoTPI_3k5.frmAltaCliente.resources

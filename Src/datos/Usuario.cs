@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoTPI_3k5.datos
 {
-    public class Usuario
+    /*public class Usuario
     {
         public string NombreUsu { get; set; }
         public string Pass { get; set; }
@@ -20,5 +20,5 @@ namespace ProyectoTPI_3k5.datos
 
         }
 
-    }
+    }*/
 }

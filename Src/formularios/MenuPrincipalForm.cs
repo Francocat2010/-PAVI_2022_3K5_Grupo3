@@ -30,5 +30,10 @@ namespace ProyectoTPI_3k5
             new ConsultaCliente().ShowDialog();
             
         }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmAltaCliente().ShowDialog();
+        }
     }
 }

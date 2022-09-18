@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cnnCadena" xml:space="preserve">
-    <value>Data Source=(local)\SQLEXPRESS;Initial Catalog=ProyectoTPI;Integrated Security=true;</value>
+    <value>Data Source=(localdb)\patricio;Initial Catalog=ProyectoTPI;Integrated Security=true;</value>
     <comment>cadena conecion base de datos</comment>
   </data>
 </root>

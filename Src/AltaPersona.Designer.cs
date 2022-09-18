@@ -179,6 +179,7 @@
             // 
             // cboTipoDoc
             // 
+            this.cboTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoDoc.FormattingEnabled = true;
             this.cboTipoDoc.Location = new System.Drawing.Point(172, 234);
             this.cboTipoDoc.Name = "cboTipoDoc";
@@ -267,6 +268,7 @@
             this.chkHijos.TabIndex = 19;
             this.chkHijos.Text = "Hijos";
             this.chkHijos.UseVisualStyleBackColor = true;
+            this.chkHijos.CheckedChanged += new System.EventHandler(this.chkHijos_CheckedChanged);
             // 
             // lblCantidadHijos
             // 
@@ -288,6 +290,7 @@
             // 
             // cboCarrera
             // 
+            this.cboCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCarrera.FormattingEnabled = true;
             this.cboCarrera.Location = new System.Drawing.Point(168, 426);
             this.cboCarrera.Name = "cboCarrera";
@@ -313,6 +316,7 @@
             this.btnGuardarPersona.TabIndex = 24;
             this.btnGuardarPersona.Text = "Guardar Persona";
             this.btnGuardarPersona.UseVisualStyleBackColor = true;
+            this.btnGuardarPersona.Click += new System.EventHandler(this.btnGuardarPersona_Click);
             // 
             // btnLimpiar
             // 
@@ -323,6 +327,7 @@
             this.btnLimpiar.TabIndex = 25;
             this.btnLimpiar.Text = "Limpiar Datos";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // label4
             // 
@@ -368,6 +373,7 @@
             this.Controls.Add(this.lblNombre);
             this.Name = "AltaPersona";
             this.Text = "AltaPersona";
+            this.Load += new System.EventHandler(this.AltaPersona_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

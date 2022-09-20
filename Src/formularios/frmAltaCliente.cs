@@ -93,5 +93,10 @@ namespace ProyectoTPI_3k5
 
 
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

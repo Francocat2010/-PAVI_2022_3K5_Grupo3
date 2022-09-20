@@ -39,7 +39,7 @@
             this.txtCalle = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGuardarPersona = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btncancelar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.barriolbl = new System.Windows.Forms.Label();
             this.txtbarrio = new System.Windows.Forms.TextBox();
@@ -155,16 +155,17 @@
             this.btnGuardarPersona.UseVisualStyleBackColor = true;
             this.btnGuardarPersona.Click += new System.EventHandler(this.btnGuardarPersona_Click);
             // 
-            // btnLimpiar
+            // btncancelar
             // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLimpiar.Location = new System.Drawing.Point(136, 459);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(107, 82);
-            this.btnLimpiar.TabIndex = 25;
-            this.btnLimpiar.Text = "Limpiar Datos";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btncancelar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btncancelar.Location = new System.Drawing.Point(136, 459);
+            this.btncancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(107, 82);
+            this.btncancelar.TabIndex = 25;
+            this.btncancelar.Text = "cancelar";
+            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // label4
             // 
@@ -216,7 +217,7 @@
             this.Controls.Add(this.txtbarrio);
             this.Controls.Add(this.barriolbl);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnGuardarPersona);
             this.Controls.Add(this.txtNroCasa);
             this.Controls.Add(this.label2);
@@ -249,7 +250,7 @@
         private TextBox txtCalle;
         private Label label3;
         private Button btnGuardarPersona;
-        private Button btnLimpiar;
+        private Button btncancelar;
         private Label label4;
         private Label barriolbl;
         private TextBox txtbarrio;

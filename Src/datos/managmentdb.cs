@@ -35,7 +35,31 @@ namespace ProyectoTPI_3k5.datos
 
             return tabla;
         }
+        public int EjecutarSQL(string strSql, Dictionary<string, object> prs = null)
+        {
+            
+            SqlCommand cmd = new SqlCommand();
 
+            int rtdo = 0;
+
+           
+            cnn.Open();
+            cmd.Connection = cnn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = strSql;
+
+            if (prs != null)
+            {
+                foreach (var item in prs)
+                {
+                    cmd.Parameters.AddWithValue(item.Key, item.Value);
+                }
+            }
+
+               
+            rtdo = cmd.ExecuteNonQuery();
+            return rtdo;
+        }
 
     }
 }

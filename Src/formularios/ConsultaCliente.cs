@@ -18,11 +18,6 @@ namespace ProyectoTPI_3k5.formularios
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             string strSql = "SELECT * FROM clientes WHERE 1=1 ";
@@ -47,6 +42,13 @@ namespace ProyectoTPI_3k5.formularios
             {
                 MessageBox.Show("No se encontraron coincidencias para el/los filtros ingresados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+
+
+        }
+
+        private void btnmodificar_Click(object sender, EventArgs e)
+        {
         }
     }
 }

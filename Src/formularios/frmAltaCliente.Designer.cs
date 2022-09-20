@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.barriolbl = new System.Windows.Forms.Label();
             this.txtbarrio = new System.Windows.Forms.TextBox();
+            this.chkactivo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -145,18 +146,19 @@
             // btnGuardarPersona
             // 
             this.btnGuardarPersona.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarPersona.Location = new System.Drawing.Point(377, 401);
+            this.btnGuardarPersona.Location = new System.Drawing.Point(386, 459);
             this.btnGuardarPersona.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardarPersona.Name = "btnGuardarPersona";
             this.btnGuardarPersona.Size = new System.Drawing.Size(107, 82);
             this.btnGuardarPersona.TabIndex = 24;
             this.btnGuardarPersona.Text = "Guardar Persona";
             this.btnGuardarPersona.UseVisualStyleBackColor = true;
+            this.btnGuardarPersona.Click += new System.EventHandler(this.btnGuardarPersona_Click);
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLimpiar.Location = new System.Drawing.Point(139, 401);
+            this.btnLimpiar.Location = new System.Drawing.Point(136, 459);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(107, 82);
@@ -195,11 +197,22 @@
             this.txtbarrio.Size = new System.Drawing.Size(271, 31);
             this.txtbarrio.TabIndex = 28;
             // 
+            // chkactivo
+            // 
+            this.chkactivo.AutoSize = true;
+            this.chkactivo.Location = new System.Drawing.Point(246, 398);
+            this.chkactivo.Name = "chkactivo";
+            this.chkactivo.Size = new System.Drawing.Size(85, 29);
+            this.chkactivo.TabIndex = 29;
+            this.chkactivo.Text = "activo";
+            this.chkactivo.UseVisualStyleBackColor = true;
+            // 
             // frmAltaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 614);
+            this.Controls.Add(this.chkactivo);
             this.Controls.Add(this.txtbarrio);
             this.Controls.Add(this.barriolbl);
             this.Controls.Add(this.label4);
@@ -240,5 +253,6 @@
         private Label label4;
         private Label barriolbl;
         private TextBox txtbarrio;
+        private CheckBox chkactivo;
     }
 }

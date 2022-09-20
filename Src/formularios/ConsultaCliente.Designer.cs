@@ -31,9 +31,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.chkActivos = new System.Windows.Forms.CheckBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.NroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +39,11 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.chkActivos = new System.Windows.Forms.CheckBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btnmodificar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +70,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(760, 565);
+            this.groupBox1.Size = new System.Drawing.Size(733, 541);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -85,44 +87,13 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvClientes.Location = new System.Drawing.Point(20, 220);
+            this.dgvClientes.Location = new System.Drawing.Point(20, 168);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 62;
             this.dgvClientes.RowTemplate.Height = 25;
             this.dgvClientes.Size = new System.Drawing.Size(687, 342);
             this.dgvClientes.TabIndex = 9;
-            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(433, 37);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(107, 38);
-            this.btnConsultar.TabIndex = 8;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
-            // chkActivos
-            // 
-            this.chkActivos.AutoSize = true;
-            this.chkActivos.Location = new System.Drawing.Point(127, 102);
-            this.chkActivos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkActivos.Name = "chkActivos";
-            this.chkActivos.Size = new System.Drawing.Size(93, 29);
-            this.chkActivos.TabIndex = 7;
-            this.chkActivos.Text = "activos";
-            this.chkActivos.UseVisualStyleBackColor = true;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(127, 37);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(295, 31);
-            this.txtNombre.TabIndex = 6;
             // 
             // NroDocumento
             // 
@@ -196,14 +167,67 @@
             this.Column3.Visible = false;
             this.Column3.Width = 150;
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(433, 37);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(107, 38);
+            this.btnConsultar.TabIndex = 8;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // chkActivos
+            // 
+            this.chkActivos.AutoSize = true;
+            this.chkActivos.Location = new System.Drawing.Point(127, 102);
+            this.chkActivos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkActivos.Name = "chkActivos";
+            this.chkActivos.Size = new System.Drawing.Size(93, 29);
+            this.chkActivos.TabIndex = 7;
+            this.chkActivos.Text = "activos";
+            this.chkActivos.UseVisualStyleBackColor = true;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(127, 37);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(295, 31);
+            this.txtNombre.TabIndex = 6;
+            // 
+            // btneliminar
+            // 
+            this.btneliminar.Location = new System.Drawing.Point(125, 594);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(112, 34);
+            this.btneliminar.TabIndex = 5;
+            this.btneliminar.Text = "eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnmodificar
+            // 
+            this.btnmodificar.Location = new System.Drawing.Point(450, 594);
+            this.btnmodificar.Name = "btnmodificar";
+            this.btnmodificar.Size = new System.Drawing.Size(112, 34);
+            this.btnmodificar.TabIndex = 6;
+            this.btnmodificar.Text = "modificar";
+            this.btnmodificar.UseVisualStyleBackColor = true;
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
+            // 
             // ConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1251, 750);
+            this.ClientSize = new System.Drawing.Size(806, 667);
+            this.Controls.Add(this.btnmodificar);
+            this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "ConsultaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta cliente";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -227,5 +251,7 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
+        private Button btneliminar;
+        private Button btnmodificar;
     }
 }

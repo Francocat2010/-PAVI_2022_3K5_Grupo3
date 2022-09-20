@@ -14,7 +14,7 @@ namespace ProyectoTPI_3k5
 {
     public partial class MenuPrincipalForm : Form
     {
-        public MenuPrincipalForm(string usuario)
+        public MenuPrincipalForm()
         {
             InitializeComponent();
             
@@ -34,6 +34,11 @@ namespace ProyectoTPI_3k5
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new frmAltaCliente().ShowDialog();
+        }
+
+        private void MenuPrincipalForm_Load(object sender, EventArgs e)
+        {
+          new LoginForm().ShowDialog();   
         }
     }
 }

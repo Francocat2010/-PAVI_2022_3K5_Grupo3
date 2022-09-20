@@ -69,20 +69,20 @@
             this.nuevoToolStripMenuItem,
             this.consultaToolStripMenuItem1});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(175, 34);
             this.consultaToolStripMenuItem.Text = "Clientes";
             // 
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(238, 34);
             this.nuevoToolStripMenuItem.Text = "Nuevo cliente";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(238, 34);
             this.consultaToolStripMenuItem1.Text = "Consulta cliente";
             this.consultaToolStripMenuItem1.Click += new System.EventHandler(this.consultaToolStripMenuItem1_Click);
             // 
@@ -125,6 +125,7 @@
             this.Name = "MenuPrincipalForm";
             this.Text = "Menu Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuPrincipalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

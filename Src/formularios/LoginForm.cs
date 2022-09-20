@@ -13,21 +13,13 @@ namespace ProyectoTPI_3k5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-
-            // Usuario usu = new Usuario(txtUsuario.Text, txtPassword.Text);
-
-            //string usuCorrecto = "Juan";
-            //string passCorrecto = "1234";
-
             if (ValidarCredenciales(txtUsuario.Text, txtPassword.Text))
             {
-                MenuPrincipalForm menuPrincipal = new MenuPrincipalForm(txtUsuario.Text);
-                menuPrincipal.Show();
                 this.Hide();
             }
             else
@@ -62,9 +54,9 @@ namespace ProyectoTPI_3k5
                 return uservalido;
             }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Environment.Exit(0);
         }
     }
 }

@@ -37,18 +37,65 @@ namespace ProyectoTPI_3k5.formularios
             {
                 strSql += " AND activo_cliente = '0'";
             }
-            dgvClientes.DataSource = new Managmentdb().ConsultaSQL(strSql, parametros);
-            if(dgvClientes.Rows.Count == 0)
-            {
-                MessageBox.Show("No se encontraron coincidencias para el/los filtros ingresados", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
 
+            dgvClientes.DataSource = new Managmentdb().ConsultaSQL(strSql, parametros);
+
+            if (dgvClientes.Rows.Count > 0 && chkActivos.Checked)
+            {
+                habilitarControles(true);
+            }
+            else
+            {
+                habilitarControles(false);
+            }
 
 
         }
 
+        private void habilitarControles(bool v)
+        {
+            btnmodificar.Enabled = v;
+            btneliminar.Enabled = v;
+        }
+
         private void btnmodificar_Click(object sender, EventArgs e)
         {
+            DataGridViewRow fila = dgvClientes.CurrentRow;
+            if (fila != null)
+            {
+                new baja_modificacion(1, mapper(fila)).ShowDialog();
+                this.btnConsultar_Click(null, null);
+            }
+        }
+
+        private Cliente mapper(DataGridViewRow fila)
+        {
+            Cliente oSeleted = new Cliente();
+            oSeleted.Nom_Cliente = fila.Cells["Nombre"].Value.ToString();
+            oSeleted.Nro_Doc = (int)(fila.Cells["NroDocumento"].Value);
+            oSeleted.Activo = (bool)fila.Cells["Activo"].Value;
+            oSeleted.Ape_Cliente = fila.Cells["Apellido"].Value.ToString();
+            oSeleted.Barrio = int.Parse(fila.Cells["barrio"].Value.ToString());
+            oSeleted.Nro_calle = int.Parse(fila.Cells["numerocalle"].Value.ToString());
+            oSeleted.Calle = fila.Cells["calle"].Value.ToString();
+
+
+            return oSeleted;
+        }
+
+        private void ConsultaCliente_Load(object sender, EventArgs e)
+        {
+            habilitarControles(false);
+        }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow fila = dgvClientes.CurrentRow;
+            if (fila != null)
+            {
+                new baja_modificacion(2, mapper(fila)).ShowDialog();
+                this.btnConsultar_Click(null, null);
+            }
         }
     }
 }

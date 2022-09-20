@@ -35,10 +35,9 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Activo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.tipo_doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numerocalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.chkActivos = new System.Windows.Forms.CheckBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -83,10 +82,9 @@
             this.Nombre,
             this.Apellido,
             this.Activo,
-            this.tipo_doc,
-            this.Column1,
-            this.Column2,
-            this.Column3});
+            this.calle,
+            this.numerocalle,
+            this.barrio});
             this.dgvClientes.Location = new System.Drawing.Point(20, 168);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvClientes.Name = "dgvClientes";
@@ -131,41 +129,32 @@
             this.Activo.ReadOnly = true;
             this.Activo.Width = 150;
             // 
-            // tipo_doc
+            // calle
             // 
-            this.tipo_doc.DataPropertyName = "tipo_doc_cliente";
-            this.tipo_doc.HeaderText = "tipodocumento";
-            this.tipo_doc.MinimumWidth = 8;
-            this.tipo_doc.Name = "tipo_doc";
-            this.tipo_doc.Visible = false;
-            this.tipo_doc.Width = 150;
+            this.calle.DataPropertyName = "calle";
+            this.calle.HeaderText = "calle";
+            this.calle.MinimumWidth = 8;
+            this.calle.Name = "calle";
+            this.calle.Visible = false;
+            this.calle.Width = 150;
             // 
-            // Column1
+            // numerocalle
             // 
-            this.Column1.DataPropertyName = "calle";
-            this.Column1.HeaderText = "calle";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
-            this.Column1.Width = 150;
+            this.numerocalle.DataPropertyName = "nro_calle";
+            this.numerocalle.HeaderText = "nro_calle";
+            this.numerocalle.MinimumWidth = 8;
+            this.numerocalle.Name = "numerocalle";
+            this.numerocalle.Visible = false;
+            this.numerocalle.Width = 150;
             // 
-            // Column2
+            // barrio
             // 
-            this.Column2.DataPropertyName = "nro_calle";
-            this.Column2.HeaderText = "nro_calle";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Visible = false;
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "id_barrio";
-            this.Column3.HeaderText = "idbarrio";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Visible = false;
-            this.Column3.Width = 150;
+            this.barrio.DataPropertyName = "id_barrio";
+            this.barrio.HeaderText = "idbarrio";
+            this.barrio.MinimumWidth = 8;
+            this.barrio.Name = "barrio";
+            this.barrio.Visible = false;
+            this.barrio.Width = 150;
             // 
             // btnConsultar
             // 
@@ -205,6 +194,7 @@
             this.btneliminar.TabIndex = 5;
             this.btneliminar.Text = "eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnmodificar
             // 
@@ -229,6 +219,7 @@
             this.Name = "ConsultaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta cliente";
+            this.Load += new System.EventHandler(this.ConsultaCliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
@@ -243,15 +234,14 @@
         private Button btnConsultar;
         private CheckBox chkActivos;
         private DataGridView dgvClientes;
+        private Button btneliminar;
+        private Button btnmodificar;
         private DataGridViewTextBoxColumn NroDocumento;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn Apellido;
         private DataGridViewCheckBoxColumn Activo;
-        private DataGridViewTextBoxColumn tipo_doc;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private Button btneliminar;
-        private Button btnmodificar;
+        private DataGridViewTextBoxColumn calle;
+        private DataGridViewTextBoxColumn numerocalle;
+        private DataGridViewTextBoxColumn barrio;
     }
 }
